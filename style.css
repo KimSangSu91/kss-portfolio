@@ -36,6 +36,10 @@ body {
     word-break: keep-all;
     margin-bottom: 0;
     /* h1 자체 마진 제거 */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 /* 타이핑 효과 스타일 */
@@ -45,6 +49,10 @@ body {
     min-width: 140px;
     min-height: 1.4em;
     vertical-align: bottom;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .typing-text::after {
@@ -97,6 +105,10 @@ body {
     margin-bottom: 2rem;
     display: inline-block;
     padding-bottom: 5px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .exp-item {

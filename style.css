@@ -186,6 +186,11 @@ body {
         padding-bottom: 0;
     }
 
+    /* PC 해상도: 섹션 타이틀 래퍼 레이아웃 */
+    .section-title-wrapper {
+        align-items: center;
+    }
+
     /* 1. 컨테이너 높이 및 패딩 조정 */
     .container {
         /* 최소 높이를 뷰포트 높이로 설정하여 스크롤 없이 한 화면에 보이도록 함 */
@@ -311,11 +316,6 @@ body {
     /* PC 해상도: 프로젝트 이름 폰트 사이즈 */
     .project-name {
         font-size: 22px;
-    }
-
-    /* PC 해상도: 섹션 타이틀 래퍼 레이아웃 */
-    .section-title-wrapper {
-        align-items: center;
     }
 }
 

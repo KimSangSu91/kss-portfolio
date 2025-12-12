@@ -99,6 +99,22 @@ body {
 
 /* --- 모바일 환경 (기본) 설정 --- */
 
+/* 첫 페이지 섹션 배경 */
+.first-page-section {
+    background-color: #f6f2fe;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 0;
+}
+
+.first-page-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
 /* 모바일에서는 이미지 숨김 */
 .profile-image {
     display: none;
@@ -161,6 +177,14 @@ body {
 
 /* style.css - @media (min-width: 768px) 내부 수정 */
 @media (min-width: 768px) {
+
+    /* 첫 페이지 섹션 container PC 스타일 */
+    .first-page-section .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
 
     /* 1. 컨테이너 높이 및 패딩 조정 */
     .container {
@@ -288,6 +312,11 @@ body {
     .project-name {
         font-size: 22px;
     }
+
+    /* PC 해상도: 섹션 타이틀 래퍼 레이아웃 */
+    .section-title-wrapper {
+        align-items: center;
+    }
 }
 
 /* 2페이지 전체 섹션 (1페이지와 구분) */
@@ -298,11 +327,36 @@ body {
 
 /* 1. 프로젝트 소개 섹션 */
 
+.section-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+    gap: 2rem;
+}
+
 .project-section .section-title {
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 4rem;
-    color: #555;
+    margin-bottom: 0;
+    color: #333;
+    flex: 1;
+}
+
+.pdf-btn {
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 50px;
+    background-color: #6400f9;
+    transition: background-color 0.3s;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.pdf-btn:hover {
+    background-color: #4d00c7;
 }
 
 .project-list {
@@ -352,10 +406,18 @@ body {
     text-align: left;
 }
 
+.skill-icon {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
 .skill-icon img {
     width: 70px;
     height: auto;
-    margin-bottom: 1rem;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .skill-level {
@@ -374,6 +436,16 @@ body {
 /* --- 2페이지 반응형 (모바일 환경: 2열 그리드) --- */
 @media (max-width: 768px) {
     /* 기존 1페이지 반응형 스타일은 유지됩니다. */
+
+    .section-title-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .pdf-btn {
+        align-self: flex-start;
+    }
 
     .project-item {
         font-size: 1.2rem;
@@ -520,7 +592,7 @@ body {
     width: 100%;
     height: 500px;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .carousel-wrapper {
@@ -797,7 +869,7 @@ body {
 
 /* 프로젝트 헤더 (상단 제목 및 내비게이션) */
 .project-header {
-    background-color: #f7f7f7;
+    background-color: #f6f2fe;
     padding: 2rem 0;
     border-bottom: 1px solid #eee;
     text-align: center;

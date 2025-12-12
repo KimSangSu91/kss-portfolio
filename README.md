@@ -5,11 +5,9 @@
 
 1. 웹사이트 접속
 
-몇 분 후 다음 URL로 접속 가능합니다:
+다음 URL로 접속 가능합니다:
 - `https://kimSangSu91.github.io/kss-portfolio/`
 
-또는 저장소 이름을 `username.github.io` 형식으로 만들었다면:
-- `https://kimSangSu91.github.io/`
 
 ## 파일 구조
 

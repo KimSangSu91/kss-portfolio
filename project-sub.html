@@ -30,146 +30,115 @@
     </header>
 
     <main class="container project-detail-container">
-        
-        <!-- 1. WEB/APP 서비스 기획 -->
-        <section class="project-implementation">
-            <h2>1. 영어 단어 학습 앱 '헤이보카'</h2>
-            
-            <h3>WEB/APP 서비스 기획</h3>
-            <div class="project-detail-image">
-                <img src="images/heyvoca.png" alt="헤이보카 앱">
-            </div>
-            <ul class="project-meta-info" style="margin-top: 1rem; margin-bottom: 1.5rem;">
-                <li class="meta-item"><strong>기간</strong> 2024.12 ~ 2025.6</li>
-                <li class="meta-item"><strong>역할</strong> 기획&마케팅(팀원)</li>
-                <li class="meta-item"><strong>참여율</strong> 기획 20%</li>
-                <li class="meta-item"><strong>프로젝트 요약</strong> 영어 단어 학습 보카 앱(안드로이드/iOS)</li>
-            </ul>
-        </section>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">전체보기</button>
+            <button class="filter-btn" data-filter="webapp">Web/App</button>
+            <button class="filter-btn" data-filter="system">시스템&Backoffice</button>
+            <button class="filter-btn" data-filter="document">문서 작업</button>
+            <button class="filter-btn" data-filter="rnd">연구개발(R&D)</button>
+        </div>
 
-        <section class="project-implementation">
-            <h2>2. 호텔 전용 AI 챗봇 서비스 '데이티'</h2>
-            
-            <h3>WEB/APP 서비스 기획</h3>
-            <div class="project-detail-image">
-                <img src="images/daty.png" alt="데이티 챗봇 서비스">
-            </div>
-            <ul class="project-meta-info" style="margin-top: 1rem; margin-bottom: 1.5rem;">
-                <li class="meta-item"><strong>기간</strong> 2024.9 ~ 2025.2</li>
-                <li class="meta-item"><strong>역할</strong> PM (Project Manager)</li>
-                <li class="meta-item"><strong>참여율</strong> 기획 100%</li>
-                <li class="meta-item"><strong>프로젝트 요약</strong> 호텔 이용 문의/예약이 가능한 챗봇 시스템</li>
-            </ul>
-        </section>
+        <div class="project-gallery">
+            <a href="project-sub-01.html" class="gallery-item" data-category="webapp">
+                <div class="gallery-image">
+                    <img src="images/heyvoca.png" alt="헤이보카 앱">
+                </div>
+                <div class="gallery-info">
+                    <h3>01. 영어 단어 학습 앱 '헤이보카'</h3>
+                    <p class="gallery-category">WEB/APP 서비스 기획</p>
+                </div>
+            </a>
 
-        <!-- 2. 시스템&Backoffice 기획&설계 -->
-        <section class="project-implementation">
-            <h2>3. 한국어 문장 데이터 태깅 시스템</h2>
-            
-            <h3>시스템&Backoffice 기획&설계</h3>
-            <div class="project-detail-image">
-                <img src="images/tagging.png" alt="한국어 문장 데이터 태깅 시스템">
-            </div>
-            <ul class="project-meta-info" style="margin-top: 1rem; margin-bottom: 1.5rem;">
-                <li class="meta-item"><strong>기간</strong> 2022.6 ~ 2022.9</li>
-                <li class="meta-item"><strong>역할</strong> PM (Project Manager)</li>
-                <li class="meta-item"><strong>참여율</strong> 기획 100%</li>
-                <li class="meta-item"><strong>프로젝트 요약</strong> 한국어 리뷰 어절 별 감정/핵심키워드 분류 시스템</li>
-            </ul>
-        </section>
+            <a href="project-sub-02.html" class="gallery-item" data-category="webapp">
+                <div class="gallery-image">
+                    <img src="images/daty.png" alt="데이티 챗봇 서비스">
+                </div>
+                <div class="gallery-info">
+                    <h3>02. 호텔 전용 AI 챗봇 서비스 '데이티'</h3>
+                    <p class="gallery-category">WEB/APP 서비스 기획</p>
+                </div>
+            </a>
 
-        <section class="project-implementation">
-            <h2>4. 마케팅 SMS 제작 및 발송 시스템</h2>
-            
-            <h3>시스템&Backoffice 기획&설계</h3>
-            <div class="project-detail-image">
-                <img src="images/sms.png" alt="마케팅 SMS 제작 및 발송 시스템">
-            </div>
-            <ul class="project-meta-info" style="margin-top: 1rem; margin-bottom: 1.5rem;">
-                <li class="meta-item"><strong>기간</strong> 2023.1 ~ 2023.3</li>
-                <li class="meta-item"><strong>역할</strong> PM (Project Manager)</li>
-                <li class="meta-item"><strong>참여율</strong> 기획 100% | UI/UX 100%</li>
-                <li class="meta-item"><strong>프로젝트 요약</strong> 마케팅 SMS 제작(템플릿) 및 발송 시스템</li>
-            </ul>
-        </section>
+            <a href="project-sub-03.html" class="gallery-item" data-category="system">
+                <div class="gallery-image">
+                    <img src="images/tagging.png" alt="한국어 문장 데이터 태깅 시스템">
+                </div>
+                <div class="gallery-info">
+                    <h3>03. 한국어 문장 데이터 태깅 시스템</h3>
+                    <p class="gallery-category">시스템&Backoffice 기획&설계</p>
+                </div>
+            </a>
 
-        <!-- 3-1. 문서 작업(서비스&기업 소개서 등) -->
-        <section class="project-implementation">
-            <h2>5. 데이터메니티 서비스 소개서</h2>
-            
-            <h3>문서 작업(서비스&기업 소개서 등)</h3>
-            <div class="project-detail-image">
-                <img src="images/irbook.png" alt="데이터메니티 서비스 소개서">
-            </div>
-            <ul class="project-meta-info" style="margin-top: 1rem; margin-bottom: 1.5rem;">
-                <li class="meta-item"><strong>기간</strong> 2020.1 ~ 2020.1</li>
-                <li class="meta-item"><strong>역할</strong> PM (Project Manager)</li>
-                <li class="meta-item"><strong>참여율</strong> 기획&제작&디자인 100%</li>
-                <li class="meta-item"><strong>프로젝트 요약</strong> 주식회사 히어로웍스 IR Book 제작</li>
-            </ul>
-        </section>
+            <a href="project-sub-04.html" class="gallery-item" data-category="system">
+                <div class="gallery-image">
+                    <img src="images/sms.png" alt="마케팅 SMS 제작 및 발송 시스템">
+                </div>
+                <div class="gallery-info">
+                    <h3>04. 마케팅 SMS 제작 및 발송 시스템</h3>
+                    <p class="gallery-category">시스템&Backoffice 기획&설계</p>
+                </div>
+            </a>
 
-        <!-- 3-2. 문서 작업(Report & Column) -->
-        <section class="project-implementation">
-            <h2>6. 호텔 인사이트 보고서 발행</h2>
-            
-            <h3>문서 작업(Report & Column)</h3>
-            <div class="project-detail-image">
-                <img src="images/insightreport.png" alt="호텔 인사이트 보고서">
-            </div>
-            <ul class="project-meta-info" style="margin-top: 1rem; margin-bottom: 1.5rem;">
-                <li class="meta-item"><strong>기간</strong> 2020.12 ~ 2025.6</li>
-                <li class="meta-item"><strong>역할</strong> PM (Project Manager)</li>
-                <li class="meta-item"><strong>참여율</strong> 기획&제작&디자인 100%</li>
-                <li class="meta-item"><strong>프로젝트 요약</strong> 고객사 호텔 대상 인사이트 보고서 제공</li>
-            </ul>
-        </section>
+            <a href="project-sub-05.html" class="gallery-item" data-category="document">
+                <div class="gallery-image">
+                    <img src="images/irbook.png" alt="히어로웍스 IR Book 제작">
+                </div>
+                <div class="gallery-info">
+                    <h3>05. 히어로웍스 IR Book 제작</h3>
+                    <p class="gallery-category">문서 작업(서비스&기업 소개서 등)</p>
+                </div>
+            </a>
 
-        <section class="project-implementation">
-            <h2>7. 호텔앤레스토랑 월간 매거진 칼럼 발행</h2>
-            
-            <h3>문서 작업(Report & Column)</h3>
-            <div class="project-detail-image">
-                <img src="images/column.png" alt="호텔앤레스토랑 월간 매거진 칼럼">
-            </div>
-            <ul class="project-meta-info" style="margin-top: 1rem; margin-bottom: 1.5rem;">
-                <li class="meta-item"><strong>기간</strong> 2022.1 ~ 2025.6</li>
-                <li class="meta-item"><strong>역할</strong> PM (Project Manager)</li>
-                <li class="meta-item"><strong>참여율</strong> 기획&제작 100% | 데이터 추출 30%</li>
-                <li class="meta-item"><strong>프로젝트 요약</strong> 호텔앤레스토랑 월간 매거진 칼럼니스트</li>
-            </ul>
-        </section>
+            <a href="project-sub-06.html" class="gallery-item" data-category="document">
+                <div class="gallery-image">
+                    <img src="images/insightreport.png" alt="호텔 인사이트 보고서">
+                </div>
+                <div class="gallery-info">
+                    <h3>06. 호텔 인사이트 보고서 발행</h3>
+                    <p class="gallery-category">문서 작업(Report & Column)</p>
+                </div>
+            </a>
 
-        <!-- 4. 연구개발(R&D) -->
-        <section class="project-implementation">
-            <h2>8. 객실 분류 시스템 R&D</h2>
-            
-            <h3>연구개발(R&D)</h3>
-            <div class="project-detail-image">
-                <img src="images/rnd.png" alt="객실 분류 시스템 R&D">
-            </div>
-            <ul class="project-meta-info" style="margin-top: 1rem; margin-bottom: 1.5rem;">
-                <li class="meta-item"><strong>기간</strong> 2021.11 ~ 2022.4</li>
-                <li class="meta-item"><strong>역할</strong> PM (Project Manager)</li>
-                <li class="meta-item"><strong>참여율</strong> 기획&정책 설정 100% | 데이터 분석 30%</li>
-                <li class="meta-item"><strong>프로젝트 요약</strong> 호텔 객실 타입 분류 AI 모델 개발</li>
-            </ul>
-        </section>
+            <a href="project-sub-07.html" class="gallery-item" data-category="document">
+                <div class="gallery-image">
+                    <img src="images/column.png" alt="호텔앤레스토랑 월간 매거진 칼럼">
+                </div>
+                <div class="gallery-info">
+                    <h3>07. 호텔앤레스토랑 월간 매거진 칼럼 발행</h3>
+                    <p class="gallery-category">문서 작업(Report & Column)</p>
+                </div>
+            </a>
 
-        <section class="project-implementation">
-            <h2>9. 최적 가격 결정 시스템 R&D</h2>
-            
-            <h3>연구개발(R&D)</h3>
-            <div class="project-detail-image">
-                <img src="images/rnd2.png" alt="최적 가격 결정 시스템 R&D">
-            </div>
-            <ul class="project-meta-info" style="margin-top: 1rem; margin-bottom: 1.5rem;">
-                <li class="meta-item"><strong>기간</strong> 2021.5 ~ 2022.1</li>
-                <li class="meta-item"><strong>역할</strong> PM (Project Manager)</li>
-                <li class="meta-item"><strong>참여율</strong> 기획&정책 설정 100% | 데이터 분석 30%</li>
-                <li class="meta-item"><strong>프로젝트 요약</strong> 호텔 객실 최적 판매 가격 책정 AI 모델 개발</li>
-            </ul>
-        </section>
+            <a href="project-sub-08.html" class="gallery-item" data-category="rnd">
+                <div class="gallery-image">
+                    <img src="images/rnd.png" alt="객실 분류 시스템 R&D">
+                </div>
+                <div class="gallery-info">
+                    <h3>08. 객실 분류 시스템 R&D</h3>
+                    <p class="gallery-category">연구개발(R&D)</p>
+                </div>
+            </a>
+
+            <a href="project-sub-09.html" class="gallery-item" data-category="rnd">
+                <div class="gallery-image">
+                    <img src="images/rnd2.png" alt="최적 가격 결정 시스템 R&D">
+                </div>
+                <div class="gallery-info">
+                    <h3>09. 최적 가격 결정 시스템 R&D</h3>
+                    <p class="gallery-category">연구개발(R&D)</p>
+                </div>
+            </a>
+
+            <a href="project-sub-10.html" class="gallery-item" data-category="document">
+                <div class="gallery-image">
+                    <img src="images/sub-project10.png" alt="데이터메니티 서비스 소개서">
+                </div>
+                <div class="gallery-info">
+                    <h3>10. 데이터메니티 서비스 소개서</h3>
+                    <p class="gallery-category">문서 작업(서비스&기업 소개서 등)</p>
+                </div>
+            </a>
+        </div>
 
         <!-- 페이지 하단 푸터 & 네비게이션 -->
         <footer class="project-footer">
@@ -184,6 +153,36 @@
     <button class="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
         <span class="arrow">↑</span>
     </button>
+
+    <script>
+        // 필터 기능
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // 모든 버튼에서 active 클래스 제거
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // 클릭한 버튼에 active 클래스 추가
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all') {
+                        item.style.display = 'flex';
+                    } else {
+                        const itemCategory = item.getAttribute('data-category');
+                        if (itemCategory === filterValue) {
+                            item.style.display = 'flex';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

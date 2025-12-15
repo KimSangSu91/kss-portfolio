@@ -90,6 +90,32 @@ body {
     /* 경력 섹션과의 간격 유지 */
 }
 
+/* Who am I 버튼 스타일 */
+.who-am-i-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: #969696;
+    font-weight: 400;
+    font-size: 16px;
+    white-space: nowrap;
+    transition: color 0.3s;
+}
+
+.who-am-i-btn:hover {
+    color: #724dd8;
+}
+
+/* 따옴표 제목 스타일 (자기소개서 강조 부분) */
+.quote-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
 .intro-text {
     font-size: 1.1rem;
     color: #555;
@@ -178,6 +204,11 @@ body {
 
 /* style.css - @media (min-width: 768px) 내부 수정 */
 @media (min-width: 768px) {
+
+    /* 따옴표 제목 PC 스타일 */
+    .quote-title {
+        font-size: 1.8rem;
+    }
 
     /* 첫 페이지 섹션 container PC 스타일 */
     .first-page-section .container {

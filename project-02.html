@@ -42,8 +42,31 @@
         </div>
     </header>
 
-    <main class="container project-detail-container">
-        <section class="project-overview">
+    <main class="container project-detail-container project-detail-page-layout">
+        <!-- 사이드바 목차 -->
+        <aside class="toc-sidebar">
+            <div class="toc-content-wrapper">
+                <h3>목차</h3>
+                <ul class="toc-list">
+                    <li><a href="#section-role">핵심 역할</a></li>
+                    <li><a href="#section-feature-1">1. 플랫폼 핵심 기능/서비스 설계</a></li>
+                    <li><a href="#section-feature-2">1. 플랫폼 핵심 기능/서비스 설계-2</a></li>
+                    <li><a href="#section-feature-3">1. 플랫폼 핵심 기능/서비스 설계-3</a></li>
+                    <li><a href="#section-wireframe">2-1. 와이어프레임</a></li>
+                    <li><a href="#section-storyboard">2-2. UI/UX/스토리보드</a></li>
+                    <li><a href="#section-flowchart">2-3. 플로우차트</a></li>
+                    <li><a href="#section-policy">2-4. 정책 관리 문서</a></li>
+                    <li><a href="#section-admin">3. Admin 시스템 설계</a></li>
+                    <li><a href="#section-admin-1">3. Admin 시스템 설계-1</a></li>
+                    <li><a href="#section-admin-2">3. Admin 시스템 설계-2</a></li>
+                    <li><a href="#section-result">1-4. 성과 측정/회고</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- 메인 콘텐츠 영역 -->
+        <div class="project-content-wrapper">
+        <section id="section-role" class="project-overview">
             <div class="project-overview__content">
                 <h2>핵심 역할 (Core Role)</h2>
                 <ul class="contribution-list project-overview__list">
@@ -54,7 +77,7 @@
             </div>
         </section>
 
-        <section class="project-challenge">
+        <section id="section-feature-1" class="project-challenge">
             <h2>1. 플랫폼 핵심 기능&기술 정의/서비스 설계</h2>
             <div class="project-detail-image">
                 <img src="images/medihero02.png" alt="플랫폼 핵심 기능 및 서비스 설계 관련 화면">
@@ -80,7 +103,7 @@
             </p>
         </section>
 
-        <section class="project-solution">
+        <section id="section-feature-2" class="project-solution">
             <h2>1. 플랫폼 핵심 기능&기술 정의/서비스 설계-2</h2>
             <div class="project-detail-image">
                 <img src="images/medihero03.png" alt="서비스 설계 관련 화면">
@@ -112,7 +135,7 @@
             </ul>
         </section>
 
-        <section class="project-solution">
+        <section id="section-feature-3" class="project-solution">
             <h2>1. 플랫폼 핵심 기능&기술 정의/서비스 설계-3</h2>
             <div class="project-detail-image">
                 <img src="images/medihero04.png" alt="아키텍쳐 설계 관련 화면">
@@ -122,7 +145,7 @@
             </p>
         </section>
 
-        <section class="project-implementation">
+        <section id="section-wireframe" class="project-implementation">
             <h2>2-1. 와이어프레임 (Wireframe)</h2>
             <div class="project-detail-image">
                 <img src="images/medihero-wireframe.png" alt="와이어프레임 예시">
@@ -133,7 +156,7 @@
             <p><strong>사용 툴:</strong> Figma / Figjam</p>
         </section>
 
-        <section class="project-implementation">
+        <section id="section-storyboard" class="project-implementation">
             <h2>2-2. UI/UX/스토리보드</h2>
             <div class="project-detail-image">
                 <img src="images/medihero-story.png" alt="UI/UX 및 스토리보드 예시">
@@ -144,7 +167,7 @@
             <p><strong>사용 툴:</strong> Figma / PPT</p>
         </section>
 
-        <section class="project-implementation">
+        <section id="section-flowchart" class="project-implementation">
             <h2>2-3. 플로우차트 (Flowchart)</h2>
             <div class="project-detail-image">
                 <img src="images/medihero-flow.png" alt="플로우차트 예시">
@@ -155,7 +178,7 @@
             <p><strong>사용 툴:</strong> Figjam</p>
         </section>
 
-        <section class="project-implementation">
+        <section id="section-policy" class="project-implementation">
             <h2>2-4. 정책 관리 문서</h2>
             <div class="project-detail-image">
                 <img src="images/medihero-manage.png" alt="정책 관리 문서 예시">
@@ -166,7 +189,7 @@
             <p><strong>사용 툴:</strong> Notion</p>
         </section>
 
-        <section class="project-implementation">
+        <section id="section-admin" class="project-implementation">
             <h2>3. Admin 시스템 설계</h2>
             <div class="project-detail-image">
                 <img src="images/medihero-admin01.png" alt="Admin 시스템 설계 예시">
@@ -182,7 +205,7 @@
             </ul>
         </section>
 
-        <section class="project-implementation">
+        <section id="section-admin-1" class="project-implementation">
             <h2>3. Admin 시스템 설계-1</h2>
             <div class="project-detail-image">
                 <img src="images/medihero-admin02.png" alt="Admin 시스템 설계-1 예시">
@@ -192,7 +215,7 @@
             </p>
         </section>
 
-        <section class="project-implementation">
+        <section id="section-admin-2" class="project-implementation">
             <h2>3. Admin 시스템 설계-2</h2>
             
             <div class="project-detail-image" style="margin-bottom: 1rem;">
@@ -228,7 +251,7 @@
             </ul>
         </section>
 
-        <section class="project-result">
+        <section id="section-result" class="project-result">
             <h2>1-4. 성과 측정 및 결과/회고</h2>
 
             <h3>성과 측정</h3>
@@ -252,6 +275,8 @@
                 <li>Admin 시스템 설계 경험</li>
             </ul>
         </section>
+
+        </div> <!-- end project-content-wrapper -->
 
         <!-- 페이지 하단 푸터 & 네비게이션 -->
         <footer class="project-footer">

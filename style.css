@@ -72,10 +72,14 @@ body {
 }
 
 @keyframes blink {
-    0%, 50% {
+
+    0%,
+    50% {
         opacity: 1;
     }
-    51%, 100% {
+
+    51%,
+    100% {
         opacity: 0;
     }
 }
@@ -843,9 +847,12 @@ body {
     /* <-- 필수 */
     gap: 2rem;
     /* <--- ✅ 여기가 원하는 2rem 간격입니다. */
-    padding-top: 5rem;    /* 예시: 상단 패딩 */
-    padding-bottom: 5rem; /* 예시: 하단 패딩 */
-    padding-left: 2rem;   /* 좌우 여백 추가 */
+    padding-top: 5rem;
+    /* 예시: 상단 패딩 */
+    padding-bottom: 5rem;
+    /* 예시: 하단 패딩 */
+    padding-left: 2rem;
+    /* 좌우 여백 추가 */
     padding-right: 2rem;
 }
 
@@ -863,17 +870,18 @@ body {
     /* gap 설정으로 인해 margin-bottom은 0으로 설정합니다. */
     margin-bottom: 0;
     /* 이전에 gap 설정으로 인해 margin-bottom: 0으로 설정되어 있습니다. */
-    
+
     /* 모든 상세 섹션에 최소 높이 950px 할당 */
-    min-height: 800px; 
-    
+    min-height: 800px;
+
     /* 섹션 내부 콘텐츠의 가로/세로 정렬을 위한 Flexbox 설정 */
     display: flex;
     flex-direction: column;
-    
+
     /* 섹션 배경색을 설정하여 영역 구분을 명확히 (선택 사항) */
     background-color: #ffffff;
-    /* border-bottom: 1px solid #eee; */ /* 영역 구분을 위한 선 */
+    /* border-bottom: 1px solid #eee; */
+    /* 영역 구분을 위한 선 */
 }
 
 /* 문제/해결 등 상세 섹션 좌우 여백 확장 */
@@ -892,9 +900,9 @@ body {
     padding-top: 5rem;
     padding-bottom: 5rem;
     /* 부모 섹션의 높이에 맞춰 콘텐츠가 유연하게 배치되도록 합니다. */
-    flex-grow: 1; 
+    flex-grow: 1;
     padding-top: 5rem;
-    padding-bottom: 5rem; 
+    padding-bottom: 5rem;
 }
 
 /* 프로젝트 헤더 (상단 제목 및 내비게이션) */
@@ -1079,21 +1087,23 @@ body {
 /* 3. 프로젝트 메타 정보 (기간, 역할 등) */
 .project-meta-info {
     /* 기존에 가로 나열을 유발했던 속성 제거/재정의 */
-    display: block; /* <-- 핵심! ul을 일반적인 블록 요소로 재정의하여 li가 세로로 쌓이게 합니다. */
-    list-style: none; 
-    padding-left: 0; 
-    margin-top: 0rem; 
-    margin-bottom: 0rem; 
+    display: block;
+    /* <-- 핵심! ul을 일반적인 블록 요소로 재정의하여 li가 세로로 쌓이게 합니다. */
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
     text-align: left;
     width: fit-content;
-    margin-left: auto;  
+    margin-left: auto;
     margin-right: auto;
 }
 
 .project-meta-info .meta-item {
     /* li를 블록 요소로 확실히 정의하여 세로로 쌓이게 합니다. */
-    display: block; /* <-- 핵심! li가 세로로 한 줄씩 사용하도록 설정 */
-    padding: 0.2rem 0; 
+    display: block;
+    /* <-- 핵심! li가 세로로 한 줄씩 사용하도록 설정 */
+    padding: 0.2rem 0;
     line-height: 1.5;
 }
 
@@ -1104,6 +1114,7 @@ body {
     font-weight: 700;
     margin-right: 1.5rem;
 }
+
 .meta-item strong {
     font-weight: 700;
     color: #333;
@@ -1138,7 +1149,7 @@ body {
     margin-bottom: 0 !important;
     /* 각 섹션 하단 간격 */
     padding-top: 5rem;
-    padding-bottom: 5rem; 
+    padding-bottom: 5rem;
 }
 
 /* 섹션 타이틀 (문제, 해결책, 결과 등) */
@@ -1293,7 +1304,7 @@ body {
 
     /* 높이를 내용에 맞춰 자동으로 설정 (공통 min-height 800px 무시) */
     min-height: auto;
-    
+
     /* min-height를 다르게 설정하고 싶다면 여기서 재정의합니다. 
     min-height: 500px; */
 }
@@ -1310,28 +1321,31 @@ body {
 
 /* --- 상세 페이지 모바일 반응형 --- */
 @media (max-width: 768px) {
+
     /* 1. project-header 관련 */
     .project-header {
         /* 모바일에서는 높이 제한 해제 */
         max-height: none;
-        padding-bottom: 2rem; /* 하단 패딩 확보 */
+        padding-bottom: 2rem;
+        /* 하단 패딩 확보 */
     }
 
     .header-image {
         /* 모바일에서는 너비를 100%로 확장 */
         width: 100%;
         margin-top: 1rem;
-        max-height: 300px; /* 모바일에서 이미지 높이 제한 (선택 사항) */
+        max-height: 300px;
+        /* 모바일에서 이미지 높이 제한 (선택 사항) */
     }
 
     .project-header h1 {
         font-size: 1.5rem;
     }
-    
+
     /* 2. project-detail-container 내부 요소 관련 (이전에 중첩되었던 항목들) */
     .project-detail-container section {
         /* 상세 페이지의 각 섹션(헤더, 문제점, 해결책 등) 간의 간격 */
-        margin-bottom: 4rem; 
+        margin-bottom: 4rem;
     }
 
     .project-detail-container h2 {
@@ -1342,25 +1356,32 @@ body {
     /* 3. project-meta-info 관련 (이전에 중첩되었던 항목들) */
     .project-meta-info {
         /* .project-meta-info 본인의 스타일 */
-        list-style: none; /* 기본 리스트 스타일 제거 */
-        padding-left: 0; /* ul의 기본 패딩 제거 */
-        margin-top: 2rem; /* 위쪽 여백 추가 */
-        margin-bottom: 2rem; /* 아래쪽 여백 추가 */
+        list-style: none;
+        /* 기본 리스트 스타일 제거 */
+        padding-left: 0;
+        /* ul의 기본 패딩 제거 */
+        margin-top: 2rem;
+        /* 위쪽 여백 추가 */
+        margin-bottom: 2rem;
+        /* 아래쪽 여백 추가 */
     }
 
     .project-meta-info .meta-item {
-        padding: 0.2rem 0; /* 항목별 상하 간격 추가 */
+        padding: 0.2rem 0;
+        /* 항목별 상하 간격 추가 */
         line-height: 1.5;
-        white-space: normal; /* 모바일에서는 줄바꿈 허용 */
+        white-space: normal;
+        /* 모바일에서는 줄바꿈 허용 */
     }
 
     .project-meta-info .meta-item strong {
         /* '기간', '역할' 등의 제목 부분을 강조하고 너비를 고정하여 줄 맞춤 */
         display: inline-block;
-        width: 5rem; /* 제목 너비 조정 (필요 시 더 늘릴 수 있습니다) */
+        width: 5rem;
+        /* 제목 너비 조정 (필요 시 더 늘릴 수 있습니다) */
         font-weight: 700;
     }
-    
+
     /* 4. 기타 요소 */
     .tech-stack-grid {
         grid-template-columns: 1fr;
@@ -1512,5 +1533,145 @@ body {
 
     .gallery-info h3 {
         font-size: 1rem;
+    }
+}
+
+/* --- Table of Contents (TOC) Sidebar --- */
+.project-detail-page-layout {
+    display: block; /* 기본 블록 레이아웃으로 변경 */
+}
+
+.toc-sidebar {
+    position: fixed;
+    top: 120px;
+    right: 30px;
+    width: 60px;
+    max-height: 60px;
+    background-color: #6400f9;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: width 0.35s ease, max-height 0.35s ease, border-radius 0.35s ease, background-color 0.35s ease, padding 0.35s ease, box-shadow 0.35s ease;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    /* 모바일에서 스크롤 지원 */
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+}
+
+/* 햄버거 아이콘 (평소 상태) */
+.toc-sidebar::before {
+    content: "≡";
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+/* 호버 시 확장 */
+.toc-sidebar:hover {
+    width: 250px;
+    max-height: 600px; /* 고정된 max-height로 부드러운 트랜지션 */
+    background-color: rgba(255, 255, 255, 0.98);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid #eaeaea;
+    overflow-y: auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 호버 시 햄버거 아이콘 숨김 */
+.toc-sidebar:hover::before {
+    opacity: 0;
+}
+
+.toc-sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+.toc-sidebar::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 3px;
+}
+
+/* 내부 콘텐츠 래퍼 */
+.toc-content-wrapper {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s 0.1s, visibility 0.3s;
+}
+
+.toc-sidebar:hover .toc-content-wrapper {
+    opacity: 1;
+    visibility: visible;
+}
+
+.toc-sidebar h3 {
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #333;
+    border-bottom: 2px solid #6400f9;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.toc-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.toc-list li {
+    margin-bottom: 0.8rem;
+}
+
+.toc-list a {
+    text-decoration: none;
+    color: #666;
+    font-size: 0.95rem;
+    transition: color 0.3s, font-weight 0.3s;
+    display: block;
+    line-height: 1.4;
+}
+
+.toc-list a:hover,
+.toc-list a.active {
+    color: #6400f9;
+    font-weight: 600;
+}
+
+.project-content-wrapper {
+    width: 100%;
+}
+
+/* 목차가 스크롤될 때 앵커가 가려지지 않도록 패딩 추가 */
+.project-content-wrapper section[id] {
+    scroll-margin-top: 2rem;
+}
+
+@media (max-width: 992px) {
+    .toc-sidebar {
+        top: 80px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .toc-sidebar {
+        /* 모바일에서는 하단 플로팅 버튼 등으로 변경할 수 있으나, 일단 우하단으로 위치 변경 */
+        top: auto;
+        bottom: 80px;
+        right: 20px;
+    }
+    
+    .toc-sidebar:hover {
+        top: auto;
+        bottom: 80px;
+        max-height: 60vh; /* 화면 높이 제한 */
     }
 }

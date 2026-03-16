@@ -41,8 +41,27 @@
         </div>
     </header>
 
-    <main class="container project-detail-container">
-        <section class="project-overview">
+    <main class="container project-detail-container project-detail-page-layout">
+        <!-- 사이드바 목차 -->
+        <aside class="toc-sidebar">
+            <div class="toc-content-wrapper">
+                <h3>목차</h3>
+                <ul class="toc-list">
+                    <li><a href="#section-role">핵심 역할</a></li>
+                    <li><a href="#section-problem">1. 문제 정의 및 현황 분석</a></li>
+                    <li><a href="#section-solution">2. 요구사항 정의 및 서비스 설계</a></li>
+                    <li><a href="#section-wireframe">3-1. 와이어프레임</a></li>
+                    <li><a href="#section-storyboard">3-2. UI/UX/스토리보드</a></li>
+                    <li><a href="#section-flowchart">3-3. 플로우차트</a></li>
+                    <li><a href="#section-policy">3-4. 정책 관리 문서</a></li>
+                    <li><a href="#section-result">4. 성과 측정 및 회고</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- 메인 콘텐츠 영역 -->
+        <div class="project-content-wrapper">
+        <section id="section-role" class="project-overview">
             <div class="project-overview__content">
                 <h2>핵심 역할 (Core Role)</h2>
                 <ul class="contribution-list project-overview__list">
@@ -53,7 +72,7 @@
             </div>
         </section>
 
-        <section class="project-challenge">
+        <section id="section-problem" class="project-challenge">
             <h2>1. 문제 정의 및 현황 분석 (As-Is)</h2>
             <div class="project-detail-image">
                 <img src="images/datamenity02.png" alt="문제 정의 및 현황 분석 관련 화면">
@@ -74,7 +93,7 @@
             </p>
         </section>
 
-        <section class="project-solution">
+        <section id="section-solution" class="project-solution">
             <h2>2. 요구사항 정의 및 서비스 설계 (To-Be)</h2>
             <div class="project-detail-image">
                 <img src="images/datamenity03.png" alt="요구사항 정의 및 서비스 설계 관련 화면">
@@ -98,7 +117,7 @@
             </ul>
         </section>
 
-        <section class="project-implementation">
+        <section id="section-wireframe" class="project-implementation">
             <h2>3-1. 와이어프레임 (Wireframe)</h2>
             <div class="project-detail-image">
                 <img src="images/datamenity-wireframe.png" alt="와이어프레임 예시">
@@ -110,7 +129,7 @@
             <p><strong>사용 툴:</strong> Figma / Figjam</p>
         </section>
 
-        <section class="project-implementation">
+        <section id="section-storyboard" class="project-implementation">
             <h2>3-2. UI/UX/스토리보드</h2>
             <div class="project-detail-image">
                 <img src="images/datamenity-story.png" alt="UI/UX 및 스토리보드 예시">
@@ -122,7 +141,7 @@
             <p><strong>사용 툴:</strong> Figma / PPT</p>
         </section>
 
-        <section class="project-implementation">
+        <section id="section-flowchart" class="project-implementation">
             <h2>3-3. 플로우차트 (Flowchart)</h2>
             <div class="project-detail-image">
                 <img src="images/datamenity-flow.png" alt="플로우차트 예시">
@@ -134,7 +153,7 @@
             <p><strong>사용 툴:</strong> Figjam</p>
         </section>
 
-        <section class="project-implementation">
+        <section id="section-policy" class="project-implementation">
             <h2>3-4. 정책 관리 문서</h2>
             <div class="project-detail-image">
                 <img src="images/datamenity-policy.png" alt="정책 관리 문서 예시">
@@ -145,7 +164,7 @@
             <p><strong>사용 툴:</strong> Notion</p>
         </section>
 
-        <section class="project-result">
+        <section id="section-result" class="project-result">
             <h2>4. 성과 측정 및 회고</h2>
 
             <h3>성과 측정</h3>
@@ -169,6 +188,7 @@
                 <li>데이터 수집 및 저장, 활용 이해도 향상</li>
             </ul>
         </section>
+        </div> <!-- end project-content-wrapper -->
 
         <!-- 페이지 하단 푸터 & 네비게이션 -->
         <footer class="project-footer">
